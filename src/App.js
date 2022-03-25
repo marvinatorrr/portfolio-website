@@ -4,6 +4,7 @@ import Post from "./Components/Post";
 import Footer from "./Components/Footer";
 import "./index.css";
 import Body from "./Components/Body";
+import Button from "./Components/Button";
 
 function App() {
   return (
@@ -33,9 +34,7 @@ function App() {
         </div>
       </div>
       <div className="flex justify-center my-5">
-        <button className="bg-[#81e6d9] w-[155px] h-[40px] text-black rounded-lg hover:bg-cyan-400 transition-colors duration-500 ease-out">
-          My portfolio {">"}{" "}
-        </button>
+        <Button text="Popular posts" />
       </div>
 
       <Footer />
