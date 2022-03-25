@@ -1,16 +1,18 @@
 function Post(props) {
   return (
-    <div className="w-[230px] h-[187px]">
+    <a href="post" className="w-[230px] h-[187px] group">
       <img
         src={props.imagesrc}
         alt={props.imagealt}
-        className="w-[230px] h-[128px] rounded-lg my-2"
+        className="w-[230px] h-[128px] rounded-lg my-2 group-hover:border-2 group-hover:border-solid group-hover: border-pink-500 transition-all duration-75 ease-linear"
       ></img>
       <div className="grid grid-rows-2 justify-center ">
-        <h3 className=" text-center">{props.title}</h3>
-        <p className=" text-center">{props.description}</p>
+        <h3 className=" text-center font-bold">{props.title}</h3>
+        <p className=" text-center text-base group-hover:underline group-hover:underline-offset-2 decoration-pink-500">
+          {props.description}
+        </p>
       </div>
-    </div>
+    </a>
   );
 }
 

@@ -1,19 +1,17 @@
 import Banner from "./Components/Banner";
 import Navbar from "./Components/Navbar";
-import Card from "./Components/Card";
-import Profile from "./Components/Profile";
 import Post from "./Components/Post";
 import Footer from "./Components/Footer";
 import "./index.css";
 import Body from "./Components/Body";
+import Button from "./Components/Button";
 
 function App() {
   return (
-    <div className="bg-[#202023] text-[#eee] font-serif pt-14 pb-3 text-base">
+    <div className="bg-[#202023] text-[#eee] font-serif pt-14 pb-3 text-lg">
       <Navbar />
       <Banner />
-      <Card />
-      <Profile />
+
       <Body />
       <div className="flex justify-center">
         <div className="grid grid-rows-1 grid-flow-col gap-4">
@@ -36,9 +34,7 @@ function App() {
         </div>
       </div>
       <div className="flex justify-center my-5">
-        <button className="bg-[#81e6d9] w-[155px] h-[40px] text-black rounded-lg hover:bg-cyan-400 transition-colors duration-500 ease-out">
-          My portfolio {">"}{" "}
-        </button>
+        <Button text="Popular posts" />
       </div>
 
       <Footer />
