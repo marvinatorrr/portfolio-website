@@ -1,7 +1,5 @@
 import Banner from "./Components/Banner";
 import Navbar from "./Components/Navbar";
-import Card from "./Components/Card";
-import Profile from "./Components/Profile";
 import Post from "./Components/Post";
 import Footer from "./Components/Footer";
 import "./index.css";
@@ -9,11 +7,10 @@ import Body from "./Components/Body";
 
 function App() {
   return (
-    <div className="bg-[#202023] text-[#eee] font-serif pt-14 pb-3 text-base">
+    <div className="bg-[#202023] text-[#eee] font-serif pt-14 pb-3 text-lg">
       <Navbar />
       <Banner />
-      <Card />
-      <Profile />
+
       <Body />
       <div className="flex justify-center">
         <div className="grid grid-rows-1 grid-flow-col gap-4">
