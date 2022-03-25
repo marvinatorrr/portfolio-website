@@ -8,7 +8,7 @@ import Button from "./Components/Button";
 
 function App() {
   return (
-    <div className="bg-[#202023] text-[#eee] font-serif pt-14 pb-3 text-lg">
+    <div className="dark bg-[#202023] text-[#eee] font-serif pt-14 pb-3 text-lg dark:bg-green-900">
       <Navbar />
       <Banner />
 

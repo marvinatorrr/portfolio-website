@@ -7,7 +7,7 @@ function SocialMedia() {
         <span className="whitespace-nowrap">
           <a
             href="https://www.linkedin.com/in/marvin-ho-zq/"
-            className="items-center my-2  flex w-min hover:underline underline-offset-2 decoration-pink-500 hover:bg-cyan-200 rounded-full hover:bg-opacity-25"
+            className="items-center  flex w-min hover:underline underline-offset-2 decoration-pink-500 hover:bg-cyan-200 rounded-full hover:bg-opacity-25 p-3"
           >
             <AiFillLinkedin size={20} className="mr-2" />
             @marvin-ho-zq
@@ -17,7 +17,7 @@ function SocialMedia() {
       <div>
         <a
           href="https://github.com/marvinatorrr"
-          className="items-center my-2 flex w-min hover:underline underline-offset-2 decoration-pink-500 hover:bg-cyan-200 rounded-full hover:bg-opacity-25"
+          className="items-center flex w-min hover:underline underline-offset-2 decoration-pink-500 hover:bg-cyan-200 rounded-full hover:bg-opacity-25 p-3"
         >
           <AiFillGithub size={20} className="mr-2" />
           @marvinatorrr
