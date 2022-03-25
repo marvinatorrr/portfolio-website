@@ -1,5 +1,6 @@
 import ToggleButton from "./ToggleButton";
 import { GiKingJuMask } from "react-icons/gi";
+import { BsGithub } from "react-icons/bs";
 
 function Navbar() {
   return (
@@ -7,21 +8,29 @@ function Navbar() {
       <div className=" w-[768px] flex justify-between ">
         <div className="flex">
           <div className="flex items-center text-xl mr-6  font-extrabold">
-            <button className="ml-1 flex">
-              {" "}
+            <a href="#" className="ml-1 flex">
               <GiKingJuMask size={30} className="mr-1" />
               Marvin Ho
-            </button>
+            </a>
           </div>
-          <button className="mx-3 hover:underline underline-offset-2">
+          <a
+            href="asdf"
+            className="mx-3 hover:underline underline-offset-2 flex items-center"
+          >
             Works
-          </button>
-          <button className="mx-3 hover:underline underline-offset-2">
+          </a>
+          <a
+            href="asdf"
+            className="mx-3 hover:underline underline-offset-2 flex items-center"
+          >
             Posts
-          </button>
-          <button className="mx-3 hover:underline underline-offset-2">
-            Source
-          </button>
+          </a>
+          <a
+            href="https://github.com/marvinatorrr/portfolio-website"
+            className="mx-3 hover:underline underline-offset-2 flex items-center"
+          >
+            {<BsGithub className="mr-2" />}Source
+          </a>
         </div>
 
         <div className="flex items-center">
