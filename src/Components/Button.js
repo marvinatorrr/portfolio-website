@@ -14,7 +14,7 @@ function Button(props) {
   }
 
   return (
-    <button className="bg-[#81e6d9] w-[155px] h-[40px] text-black rounded-lg hover:bg-cyan-400 transition-colors duration-500 ease-out flex justify-center items-center">
+    <button className="bg-[#319795] dark:bg-[#8dede4] hover:dark:bg-[#4fd1c5] w-[155px] h-[40px] text-white dark:text-black rounded-lg hover:bg-[#2c7a7b] transition-colors duration-500 ease-out flex justify-center items-center ">
       {props.text}
       {RenderLogo(props.text)}
     </button>

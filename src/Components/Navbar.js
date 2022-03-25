@@ -3,7 +3,7 @@ import { GiKingJuMask } from "react-icons/gi";
 
 function Navbar() {
   return (
-    <div className=" w-full h-14 flex justify-center fixed top-0 bg-opacity-75	 bg-[#202023] text-white text-base">
+    <div className=" w-full h-14 flex justify-center fixed top-0 bg-opacity-75 backdrop-blur-sm	 bg-[#f5f0e8] dark:bg-[#202023] text-black dark:text-white text-base">
       <div className=" w-[768px] flex justify-between ">
         <div className="flex">
           <div className="flex items-center text-xl mr-6  font-extrabold">

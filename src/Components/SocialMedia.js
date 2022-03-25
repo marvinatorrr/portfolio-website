@@ -2,7 +2,7 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 function SocialMedia() {
   return (
-    <div className="text-[#81e6d9]">
+    <div className="dark:text-[#81e6d9] text-[#2c7a7b]">
       <div>
         <span className="whitespace-nowrap">
           <a

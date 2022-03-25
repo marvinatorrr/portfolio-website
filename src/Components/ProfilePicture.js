@@ -4,7 +4,7 @@ function ProfilePicture() {
       <img
         src="Resources\ProfilePic.gif"
         alt="my face"
-        className="rounded-full"
+        className="rounded-full border-solid border-2 border-sky-500"
       ></img>
     </div>
   );
