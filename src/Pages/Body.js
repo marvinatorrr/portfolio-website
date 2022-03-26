@@ -15,17 +15,17 @@ function Body() {
       <Profile />
       <div className="flex  justify-center ">
         <div className="w-[485.5px] my-3">
-          <Header title="Work" />
+          <Header title="Work" underline={true} />
           <WorkText />
           <div className=" flex justify-center my-5">
             <Button text="My portfolio" />
           </div>
           <div className="my-5">
-            <Header title="Bio" />
+            <Header title="Bio" underline={true} />
             <BioText />
           </div>
           <div className="my-5">
-            <Header title="I ♥" />
+            <Header title="I ♥" underline={true} />
             <Hobbies />
           </div>
           <Header title="On the web" />

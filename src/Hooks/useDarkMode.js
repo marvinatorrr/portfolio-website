@@ -6,7 +6,6 @@ export default function useDarkMode() {
   }
   const [theme, setTheme] = useState(localStorage.theme);
   const colorTheme = theme === "dark" ? "light" : "dark";
-  console.log(colorTheme);
   useEffect(() => {
     const root = window.document.documentElement;
 
