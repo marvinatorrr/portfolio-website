@@ -2,8 +2,23 @@ import React from "react";
 import Header from "../Components/Header";
 import Post from "../Components/Post";
 import AnimatedPage from "./AnimatePage";
+import { motion } from "framer-motion";
 
 export default function Posts() {
+  const container = {
+    show: {
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.3,
+      },
+    },
+  };
+
+  const itemA = {
+    hidden: { scale: 0, opacity: 0 },
+    show: { scale: 1, opacity: 1 },
+  };
+
   return (
     <AnimatedPage>
       <div className="flex  justify-center mt-2">
@@ -11,40 +26,45 @@ export default function Posts() {
           <div>
             <Header title="Posts" />
             <div className="flex justify-center mt-2">
-              <div className="grid grid-rows-2 grid-flow-col gap-4 mb-4">
-                <div>
+              <motion.div
+                className="grid grid-cols-2 gap-4 mb-4"
+                variants={container}
+                initial="hidden"
+                animate="show"
+              >
+                <motion.div variants={itemA}>
                   <Post
-                    title="Life as a Dev"
+                    title="1"
                     description="My Youtube Channel"
                     imagesrc="../Resources/PostImages/Post1.png"
                     imagealt="some description"
                   />
-                </div>
-                <div>
+                </motion.div>
+                <motion.div variants={itemA}>
                   <Post
-                    title="Post 2"
+                    title="2"
                     description="some other description"
                     imagesrc="../Resources/PostImages/Post1.png"
                     imagealt="some description 2"
                   />
-                </div>
-                <div>
+                </motion.div>
+                <motion.div variants={itemA}>
                   <Post
-                    title="Post 2"
+                    title="3"
                     description="some other description"
                     imagesrc="../Resources/PostImages/Post1.png"
                     imagealt="some description 2"
                   />
-                </div>
-                <div>
+                </motion.div>
+                <motion.div variants={itemA}>
                   <Post
-                    title="Post 2"
+                    title="4"
                     description="some other description"
                     imagesrc="../Resources/PostImages/Post1.png"
                     imagealt="some description 2"
                   />
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             </div>
           </div>
         </div>

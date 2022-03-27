@@ -1,9 +1,7 @@
 import Banner from "./Components/Banner";
 import Navbar from "./Components/Navbar";
-import Post from "./Components/Post";
 import Footer from "./Components/Footer";
 import "./index.css";
-import Button from "./Components/Button";
 import Body from "./Pages/Body";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Works from "./Pages/Works";

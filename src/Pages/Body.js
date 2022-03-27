@@ -9,12 +9,6 @@ import SocialMedia from "../Components/SocialMedia";
 import Post from "../Components/Post";
 import AnimatedPage from "./AnimatePage";
 
-const animations = {
-  inital: { opacity: 0, x: 100 },
-  animate: { opacity: 1, x: 0 },
-  exit: { opacity: 0, x: -100 },
-};
-
 function Body() {
   return (
     <AnimatedPage>
