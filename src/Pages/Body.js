@@ -7,55 +7,64 @@ import BioText from "../Components/BioText";
 import Hobbies from "../Components/Hobbies";
 import SocialMedia from "../Components/SocialMedia";
 import Post from "../Components/Post";
+import AnimatedPage from "./AnimatePage";
+
+const animations = {
+  inital: { opacity: 0, x: 100 },
+  animate: { opacity: 1, x: 0 },
+  exit: { opacity: 0, x: -100 },
+};
 
 function Body() {
   return (
-    <div>
-      <Card />
-      <Profile />
-      <div className="flex  justify-center ">
-        <div className="w-[485.5px] my-3">
-          <Header title="Work" underline={true} />
-          <WorkText />
-          <div className=" flex justify-center my-5">
-            <Button text="My portfolio" />
-          </div>
-          <div className="my-5">
-            <Header title="Bio" underline={true} />
-            <BioText />
-          </div>
-          <div className="my-5">
-            <Header title="I ♥" underline={true} />
-            <Hobbies />
-          </div>
-          <Header title="On the web" />
-          <SocialMedia />
-        </div>
-      </div>
-      <div className="flex justify-center">
-        <div className="grid grid-rows-1 grid-flow-col gap-4">
-          <div>
-            <Post
-              title="Life as a Dev"
-              description="My Youtube Channel"
-              imagesrc="../Resources/PostImages/Post1.png"
-              imagealt="some description"
-            />
-          </div>
-          <div>
-            <Post
-              title="Post 2"
-              description="some other description"
-              imagesrc="../Resources/PostImages/Post1.png"
-              imagealt="some description 2"
-            />
+    <AnimatedPage>
+      <div>
+        <Card />
+        <Profile />
+        <div className="flex  justify-center ">
+          <div className="w-[485.5px] my-3">
+            <Header title="Work" underline={true} />
+            <WorkText />
+            <div className=" flex justify-center my-5">
+              <Button text="My portfolio" />
+            </div>
+            <div className="my-5">
+              <Header title="Bio" underline={true} />
+              <BioText />
+            </div>
+            <div className="my-5">
+              <Header title="I ♥" underline={true} />
+              <Hobbies />
+            </div>
+            <Header title="On the web" />
+            <SocialMedia />
           </div>
         </div>
+        <div className="flex justify-center">
+          <div className="grid grid-rows-1 grid-flow-col gap-4">
+            <div>
+              <Post
+                title="Life as a Dev"
+                description="My Youtube Channel"
+                imagesrc="../Resources/PostImages/Post1.png"
+                imagealt="some description"
+              />
+            </div>
+            <div>
+              <Post
+                title="Post 2"
+                description="some other description"
+                imagesrc="../Resources/PostImages/Post1.png"
+                imagealt="some description 2"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-center my-5">
+          <Button text="Popular posts" />
+        </div>
       </div>
-      <div className="flex justify-center my-5">
-        <Button text="Popular posts" />
-      </div>
-    </div>
+    </AnimatedPage>
   );
 }
 
