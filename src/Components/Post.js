@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 function Post(props) {
   return (
-    <a href="post" className="w-[230px] h-[187px] group">
+    <Link to="post" className="w-[230px] h-[187px] group">
       <img
         src={props.imagesrc}
         alt={props.imagealt}
@@ -12,7 +14,7 @@ function Post(props) {
           {props.description}
         </p>
       </div>
-    </a>
+    </Link>
   );
 }
 
