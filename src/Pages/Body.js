@@ -37,11 +37,11 @@ function Body() {
         </div>
         <div className="flex justify-center">
           <div className="grid grid-rows-1 grid-flow-col gap-4">
-            <Link to="post1">
+            <Link to="posts/post1">
               <Thumbnail post="post1" />
             </Link>
-            <Link to="post2">
-              <Thumbnail post="post1" />
+            <Link to="posts/post2">
+              <Thumbnail post="post2" />
             </Link>
           </div>
         </div>

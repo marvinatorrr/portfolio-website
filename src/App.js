@@ -20,6 +20,7 @@ function App() {
           <Route path="/works" element={<Works />} />
           <Route path="/posts" element={<Posts />} />
           <Route path="/" element={<Body />} />
+          <Route path="/posts/:id" element={<Post />} />
         </Routes>
       </AnimatePresence>
       <Footer />

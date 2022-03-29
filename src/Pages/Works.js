@@ -32,13 +32,13 @@ export default function Works() {
                     <Thumbnail post="post1" />
                   </motion.div>
                   <motion.div variants={itemA}>
-                    <Thumbnail post="post1" />
+                    <Thumbnail post="post2" />
                   </motion.div>
                   <motion.div variants={itemA}>
-                    <Thumbnail post="post1" />
+                    <Thumbnail post="post3" />
                   </motion.div>
                   <motion.div variants={itemA}>
-                    <Thumbnail post="post1" />
+                    <Thumbnail post="post4" />
                   </motion.div>
                 </div>
               </div>
@@ -46,18 +46,18 @@ export default function Works() {
             <div className="pt-4">
               <Header title="Works" />
               <div className="flex justify-center mt-2">
-                <div className="grid grid-rows-2 grid-flow-col gap-4">
+                <div className="grid grid-cols-2 gap-4">
                   <motion.div variants={itemA}>
                     <Thumbnail post="post1" />
                   </motion.div>
                   <motion.div variants={itemA}>
-                    <Thumbnail post="post1" />
+                    <Thumbnail post="post2" />
                   </motion.div>
                   <motion.div variants={itemA}>
-                    <Thumbnail post="post1" />
+                    <Thumbnail post="post3" />
                   </motion.div>
                   <motion.div variants={itemA}>
-                    <Thumbnail post="post1" />
+                    <Thumbnail post="post4" />
                   </motion.div>
                 </div>
               </div>
