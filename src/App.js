@@ -21,6 +21,7 @@ function App() {
           <Route path="/posts" element={<Posts />} />
           <Route path="/" element={<Body />} />
           <Route path="/posts/:id" element={<Post />} />
+          <Route path="/works/:id" element={<Post />} />
         </Routes>
       </AnimatePresence>
       <Footer />

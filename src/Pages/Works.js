@@ -3,6 +3,7 @@ import Header from "../Components/Header";
 import Thumbnail from "../Components/Thumbnail";
 import AnimatedPage from "./AnimatePage";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Works() {
   const container = {
@@ -29,16 +30,24 @@ export default function Works() {
               <div className="flex justify-center mt-2">
                 <div className="grid grid-cols-2 gap-4 mb-4">
                   <motion.div variants={itemA}>
-                    <Thumbnail post="post1" />
+                    <Link to="post1">
+                      <Thumbnail post="post1" />
+                    </Link>
                   </motion.div>
                   <motion.div variants={itemA}>
-                    <Thumbnail post="post2" />
+                    <Link to="post2">
+                      <Thumbnail post="post2" />
+                    </Link>
                   </motion.div>
                   <motion.div variants={itemA}>
-                    <Thumbnail post="post3" />
+                    <Link to="post3">
+                      <Thumbnail post="post3" />
+                    </Link>
                   </motion.div>
                   <motion.div variants={itemA}>
-                    <Thumbnail post="post4" />
+                    <Link to="post4">
+                      <Thumbnail post="post4" />
+                    </Link>
                   </motion.div>
                 </div>
               </div>
@@ -48,16 +57,24 @@ export default function Works() {
               <div className="flex justify-center mt-2">
                 <div className="grid grid-cols-2 gap-4">
                   <motion.div variants={itemA}>
-                    <Thumbnail post="post1" />
+                    <Link to="post1">
+                      <Thumbnail post="post1" />
+                    </Link>
                   </motion.div>
                   <motion.div variants={itemA}>
-                    <Thumbnail post="post2" />
+                    <Link to="post2">
+                      <Thumbnail post="post2" />
+                    </Link>
                   </motion.div>
                   <motion.div variants={itemA}>
-                    <Thumbnail post="post3" />
+                    <Link to="post3">
+                      <Thumbnail post="post3" />
+                    </Link>
                   </motion.div>
                   <motion.div variants={itemA}>
-                    <Thumbnail post="post4" />
+                    <Link to="post4">
+                      <Thumbnail post="post4" />
+                    </Link>
                   </motion.div>
                 </div>
               </div>

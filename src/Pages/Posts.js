@@ -3,6 +3,7 @@ import Header from "../Components/Header";
 import Thumbnail from "../Components/Thumbnail";
 import AnimatedPage from "./AnimatePage";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Posts() {
   const container = {
@@ -33,16 +34,24 @@ export default function Posts() {
                 animate="show"
               >
                 <motion.div variants={itemA}>
-                  <Thumbnail post="post1" />
+                  <Link to="post1">
+                    <Thumbnail post="post1" />
+                  </Link>
                 </motion.div>
                 <motion.div variants={itemA}>
-                  <Thumbnail post="post1" />
+                  <Link to="post1">
+                    <Thumbnail post="post1" />
+                  </Link>
                 </motion.div>
                 <motion.div variants={itemA}>
-                  <Thumbnail post="post1" />
+                  <Link to="post1">
+                    <Thumbnail post="post1" />
+                  </Link>
                 </motion.div>
                 <motion.div variants={itemA}>
-                  <Thumbnail post="post1" />
+                  <Link to="post1">
+                    <Thumbnail post="post1" />
+                  </Link>
                 </motion.div>
               </motion.div>
             </div>
