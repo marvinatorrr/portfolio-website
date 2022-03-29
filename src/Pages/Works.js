@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../Components/Header";
-import Post from "../Components/Post";
+import Thumbnail from "../Components/Thumbnail";
 import AnimatedPage from "./AnimatePage";
 import { motion } from "framer-motion";
 
@@ -29,36 +29,16 @@ export default function Works() {
               <div className="flex justify-center mt-2">
                 <div className="grid grid-cols-2 gap-4 mb-4">
                   <motion.div variants={itemA}>
-                    <Post
-                      title="1"
-                      description="My Youtube Channel"
-                      imagesrc="../Resources/PostImages/Post1.png"
-                      imagealt="some description"
-                    />
+                    <Thumbnail post="post1" />
                   </motion.div>
                   <motion.div variants={itemA}>
-                    <Post
-                      title="2"
-                      description="some other description"
-                      imagesrc="../Resources/PostImages/Post1.png"
-                      imagealt="some description 2"
-                    />
+                    <Thumbnail post="post1" />
                   </motion.div>
                   <motion.div variants={itemA}>
-                    <Post
-                      title="3"
-                      description="some other description"
-                      imagesrc="../Resources/PostImages/Post1.png"
-                      imagealt="some description 2"
-                    />
+                    <Thumbnail post="post1" />
                   </motion.div>
                   <motion.div variants={itemA}>
-                    <Post
-                      title="4"
-                      description="some other description"
-                      imagesrc="../Resources/PostImages/Post1.png"
-                      imagealt="some description 2"
-                    />
+                    <Thumbnail post="post1" />
                   </motion.div>
                 </div>
               </div>
@@ -68,36 +48,16 @@ export default function Works() {
               <div className="flex justify-center mt-2">
                 <div className="grid grid-rows-2 grid-flow-col gap-4">
                   <motion.div variants={itemA}>
-                    <Post
-                      title="Life as a Dev"
-                      description="My Youtube Channel"
-                      imagesrc="../Resources/PostImages/Post1.png"
-                      imagealt="some description"
-                    />
+                    <Thumbnail post="post1" />
                   </motion.div>
                   <motion.div variants={itemA}>
-                    <Post
-                      title="Post 2"
-                      description="some other description"
-                      imagesrc="../Resources/PostImages/Post1.png"
-                      imagealt="some description 2"
-                    />
+                    <Thumbnail post="post1" />
                   </motion.div>
                   <motion.div variants={itemA}>
-                    <Post
-                      title="Post 2"
-                      description="some other description"
-                      imagesrc="../Resources/PostImages/Post1.png"
-                      imagealt="some description 2"
-                    />
+                    <Thumbnail post="post1" />
                   </motion.div>
                   <motion.div variants={itemA}>
-                    <Post
-                      title="Post 2"
-                      description="some other description"
-                      imagesrc="../Resources/PostImages/Post1.png"
-                      imagealt="some description 2"
-                    />
+                    <Thumbnail post="post1" />
                   </motion.div>
                 </div>
               </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../Components/Header";
-import Post from "../Components/Post";
+import Thumbnail from "../Components/Thumbnail";
 import AnimatedPage from "./AnimatePage";
 import { motion } from "framer-motion";
 
@@ -33,36 +33,16 @@ export default function Posts() {
                 animate="show"
               >
                 <motion.div variants={itemA}>
-                  <Post
-                    title="1"
-                    description="My Youtube Channel"
-                    imagesrc="../Resources/PostImages/Post1.png"
-                    imagealt="some description"
-                  />
+                  <Thumbnail post="post1" />
                 </motion.div>
                 <motion.div variants={itemA}>
-                  <Post
-                    title="2"
-                    description="some other description"
-                    imagesrc="../Resources/PostImages/Post1.png"
-                    imagealt="some description 2"
-                  />
+                  <Thumbnail post="post1" />
                 </motion.div>
                 <motion.div variants={itemA}>
-                  <Post
-                    title="3"
-                    description="some other description"
-                    imagesrc="../Resources/PostImages/Post1.png"
-                    imagealt="some description 2"
-                  />
+                  <Thumbnail post="post1" />
                 </motion.div>
                 <motion.div variants={itemA}>
-                  <Post
-                    title="4"
-                    description="some other description"
-                    imagesrc="../Resources/PostImages/Post1.png"
-                    imagealt="some description 2"
-                  />
+                  <Thumbnail post="post1" />
                 </motion.div>
               </motion.div>
             </div>

@@ -19,7 +19,6 @@ function App() {
         <Routes key={location.pathname} location={location}>
           <Route path="/works" element={<Works />} />
           <Route path="/posts" element={<Posts />} />
-          <Route path="/post" element={<Post post="post1" />} />
           <Route path="/" element={<Body />} />
         </Routes>
       </AnimatePresence>
