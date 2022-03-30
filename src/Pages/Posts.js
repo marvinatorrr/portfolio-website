@@ -1,8 +1,9 @@
 import React from "react";
 import Header from "../Components/Header";
-import Post from "../Components/Post";
+import Thumbnail from "../Components/Thumbnail";
 import AnimatedPage from "./AnimatePage";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Posts() {
   const container = {
@@ -33,36 +34,24 @@ export default function Posts() {
                 animate="show"
               >
                 <motion.div variants={itemA}>
-                  <Post
-                    title="1"
-                    description="My Youtube Channel"
-                    imagesrc="../Resources/PostImages/Post1.png"
-                    imagealt="some description"
-                  />
+                  <Link to="post1">
+                    <Thumbnail post="post1" />
+                  </Link>
                 </motion.div>
                 <motion.div variants={itemA}>
-                  <Post
-                    title="2"
-                    description="some other description"
-                    imagesrc="../Resources/PostImages/Post1.png"
-                    imagealt="some description 2"
-                  />
+                  <Link to="post1">
+                    <Thumbnail post="post1" />
+                  </Link>
                 </motion.div>
                 <motion.div variants={itemA}>
-                  <Post
-                    title="3"
-                    description="some other description"
-                    imagesrc="../Resources/PostImages/Post1.png"
-                    imagealt="some description 2"
-                  />
+                  <Link to="post1">
+                    <Thumbnail post="post1" />
+                  </Link>
                 </motion.div>
                 <motion.div variants={itemA}>
-                  <Post
-                    title="4"
-                    description="some other description"
-                    imagesrc="../Resources/PostImages/Post1.png"
-                    imagealt="some description 2"
-                  />
+                  <Link to="post1">
+                    <Thumbnail post="post1" />
+                  </Link>
                 </motion.div>
               </motion.div>
             </div>

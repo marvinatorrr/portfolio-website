@@ -6,8 +6,9 @@ import Button from "../Components/Button";
 import BioText from "../Components/BioText";
 import Hobbies from "../Components/Hobbies";
 import SocialMedia from "../Components/SocialMedia";
-import Post from "../Components/Post";
+import Thumbnail from "../Components/Thumbnail";
 import AnimatedPage from "./AnimatePage";
+import { Link } from "react-router-dom";
 
 function Body() {
   return (
@@ -36,22 +37,12 @@ function Body() {
         </div>
         <div className="flex justify-center">
           <div className="grid grid-rows-1 grid-flow-col gap-4">
-            <div>
-              <Post
-                title="Life as a Dev"
-                description="My Youtube Channel"
-                imagesrc="../Resources/PostImages/Post1.png"
-                imagealt="some description"
-              />
-            </div>
-            <div>
-              <Post
-                title="Post 2"
-                description="some other description"
-                imagesrc="../Resources/PostImages/Post1.png"
-                imagealt="some description 2"
-              />
-            </div>
+            <Link to="posts/post1">
+              <Thumbnail post="post1" />
+            </Link>
+            <Link to="posts/post2">
+              <Thumbnail post="post2" />
+            </Link>
           </div>
         </div>
         <div className="flex justify-center my-5">
