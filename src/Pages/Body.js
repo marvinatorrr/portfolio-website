@@ -21,7 +21,9 @@ function Body() {
             <Header title="Work" underline={true} />
             <WorkText />
             <div className=" flex justify-center my-5">
-              <Button text="My portfolio" />
+              <Link to="works">
+                <Button text="My portfolio" />
+              </Link>
             </div>
             <div className="my-5">
               <Header title="Bio" underline={true} />
@@ -46,7 +48,9 @@ function Body() {
           </div>
         </div>
         <div className="flex justify-center my-5">
-          <Button text="Popular posts" />
+          <Link to="posts">
+            <Button text="Popular posts" />
+          </Link>
         </div>
       </div>
     </AnimatedPage>
