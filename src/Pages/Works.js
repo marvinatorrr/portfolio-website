@@ -38,7 +38,7 @@ export default function Works() {
               </div>
             </div>
             <div className="pt-4">
-              <Header title="Works" />
+              <Header title="Projects" />
               <div className="flex justify-center mt-2">
                 <div className="grid grid-cols-2 gap-4">
                   <motion.div variants={itemA}>

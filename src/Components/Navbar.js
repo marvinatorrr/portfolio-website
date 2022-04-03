@@ -29,6 +29,8 @@ function Navbar() {
           <a
             href="https://github.com/marvinatorrr/portfolio-website"
             className="mx-3 hover:underline underline-offset-2 flex items-center"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             {<BsGithub className="mr-2" />}Source
           </a>

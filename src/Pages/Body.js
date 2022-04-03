@@ -46,7 +46,7 @@ function Body() {
         </div>
         <div className="flex justify-center my-5">
           <Link to="posts">
-            <Button text="Popular posts" />
+            <Button text="Posts" />
           </Link>
         </div>
       </div>

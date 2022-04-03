@@ -8,7 +8,7 @@ function Thumbnail(props) {
     avensys: {
       title: "Avensys Consulting",
       description: ".NET Core",
-      img: "../Resources/PostImages/dotnet.jpg",
+      img: "../Resources/PostImages/avensys.jpg",
     },
   };
   var info = dict[props.post];
