@@ -25,10 +25,7 @@ function Body() {
                 <Button text="My portfolio" />
               </Link>
             </div>
-            <div className="my-5">
-              <Header title="Bio" underline={true} />
-              <BioText />
-            </div>
+
             <div className="my-5">
               <Header title="I ♥" underline={true} />
               <Hobbies />
@@ -39,11 +36,11 @@ function Body() {
         </div>
         <div className="flex justify-center">
           <div className="grid grid-rows-1 grid-flow-col gap-4">
-            <Link to="posts/post1">
-              <Thumbnail post="post1" />
+            <Link to="posts/mindset">
+              <Thumbnail post="mindset" />
             </Link>
-            <Link to="posts/post2">
-              <Thumbnail post="post2" />
+            <Link to="works/avensys">
+              <Thumbnail post="avensys" />
             </Link>
           </div>
         </div>

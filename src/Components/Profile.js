@@ -6,7 +6,7 @@ function Profile() {
       <div className="flex justify-between items-center  w-[485.5px] h-[106px]">
         <div>
           <h1 className="text-6xl font-bold">Marvin Ho</h1>
-          <p className="text-2xl">.Net Software Engineer</p>
+          <p className="text-2xl">Software Engineer</p>
         </div>
         <div className="">
           <ProfilePicture />

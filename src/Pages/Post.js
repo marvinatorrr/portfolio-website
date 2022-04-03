@@ -1,26 +1,28 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import AnimatedPage from "./AnimatePage";
+import { AiOutlineRight } from "react-icons/ai";
 
 function Post() {
   var dict = {
-    post1: {
-      title: "title of post 1",
+    mindset: {
+      title: "Life Long Learning",
       description: "some description",
       platform: "some platform",
-      blogpost: "some blogpost",
+      blogpost:
+        "https://www.singaporetech.edu.sg/digitalnewsroom/lifelong-learning-is-key-to-success/",
       stack: "some stack",
-      img: "../Resources/PostImages/Post1.png",
+      img: "../Resources/PostImages/speech.jpg",
     },
-    post2: {
-      title: "title of post 2",
-      description: "some description",
+    avensys: {
+      title: "Avensys Consulting",
+      description: ".NET Core Software Engineer",
       platform: "some platform",
       blogpost: "some blogpost",
       stack: "some stack",
-      img: "../Resources/PostImages/Post1.png",
+      img: "../Resources/PostImages/avensys.jpg",
     },
     post3: {
-      title: "title of post 3",
+      title: "Life Long Learning",
       description: "some description",
       platform: "some platform",
       blogpost: "some blogpost",
@@ -38,18 +40,35 @@ function Post() {
   };
 
   const { id } = useParams();
+  const navigate = useNavigate();
   var postinfo = dict[id];
 
   return (
     <AnimatedPage>
       <div className="flex w-full justify-center">
         <div className="w-[485.5px]">
-          <p>{postinfo.title}</p>
+          <p>
+            <div className="flex items-center">
+              {
+                <button onClick={() => navigate(-1)}>
+                  <span className="text-[#d657a5] hover:underline underline-offset-2">
+                    Works
+                  </span>
+                </button>
+              }
+              {<AiOutlineRight size={12} className="mx-2" />}
+              {postinfo.title}
+            </div>
+          </p>
           <p>{postinfo.description}</p>
           <p>{postinfo.platform}</p>
           <p>{postinfo.blogpost}</p>
           <p>{postinfo.stack}</p>
-          <img src={postinfo.img} className="rounded-md my-2"></img>
+          <img
+            src={postinfo.img}
+            alt="some post"
+            className="rounded-md my-2"
+          ></img>
         </div>
       </div>
     </AnimatedPage>
