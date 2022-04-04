@@ -10,6 +10,16 @@ function Thumbnail(props) {
       description: ".NET Core",
       img: "../Resources/PostImages/avensys.jpg",
     },
+    battery: {
+      title: "State of Health Estimation",
+      description: "Extreme Learning Machine",
+      img: "../Resources/PostImages/battery.png",
+    },
+    buggy: {
+      title: "Autonomous Buggy",
+      description: "PID Controller",
+      img: "../Resources/PostImages/buggy.jpg",
+    },
   };
   var info = dict[props.post];
 
@@ -18,7 +28,7 @@ function Thumbnail(props) {
       <img
         src={info.img}
         alt="post"
-        className="w-[230px] h-[128px] rounded-lg my-2 group-hover:border-2 group-hover:border-solid group-hover: border-pink-500 transition-all duration-75 ease-linear"
+        className="w-[230px] h-[128px] rounded-lg my-2 group-hover:border-2 group-hover:border-solid group-hover: border-pink-500 transition-all duration-75 ease-linear object-cover"
       ></img>
       <div className="grid grid-rows-2 justify-center ">
         <h3 className=" text-center font-bold">{info.title}</h3>

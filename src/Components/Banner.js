@@ -11,7 +11,7 @@ function Banner() {
   return (
     <div className="flex justify-center">
       <div className="w-[485.5px] h-[250px] border-solid border-2 border-sky-500 rounded-lg">
-        <Canvas camera={{ position: [0, 1, 0] }}>
+        <Canvas camera={{ position: [0, 1, 2] }}>
           <ambientLight intensity={0.4} />
           <Suspense fallback={null}>
             <Model />

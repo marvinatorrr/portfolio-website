@@ -43,7 +43,12 @@ export default function Works() {
                 <div className="grid grid-cols-2 gap-4">
                   <motion.div variants={itemA}>
                     <Link to="avensys">
-                      <Thumbnail post="avensys" />
+                      <Thumbnail post="buggy" />
+                    </Link>
+                  </motion.div>
+                  <motion.div variants={itemA}>
+                    <Link to="avensys">
+                      <Thumbnail post="battery" />
                     </Link>
                   </motion.div>
                 </div>
