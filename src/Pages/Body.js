@@ -30,7 +30,7 @@ function Body() {
               <Header title="I ♥" underline={true} />
               <Hobbies />
             </div>
-            <Header title="On the web" />
+            <Header title="On the web" underline={true} />
             <SocialMedia />
           </div>
         </div>

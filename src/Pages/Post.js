@@ -6,7 +6,7 @@ function Post() {
   var dict = {
     mindset: {
       title: "Life Long Learning",
-      description: "some description",
+      description: "My moto in life is that learning never stops. ",
       platform: (
         <div>
           <div className="my-4 ]">
@@ -16,7 +16,7 @@ function Post() {
             <span>
               <a
                 href="https://www.singaporetech.edu.sg/digitalnewsroom/lifelong-learning-is-key-to-success/"
-                className="text-[#d657a5] hover:underline underline-offset-2"
+                className="text-[#d657a5] hover:underline underline-offset-2 break-words"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -27,8 +27,14 @@ function Post() {
           <div className="my-4"></div>
         </div>
       ),
-      blogpost: "",
-      img: "../Resources/PostImages/speech.jpg",
+      img: (
+        <div>
+          <img
+            className="rounded-xl"
+            src="../Resources/PostImages/speech.jpg"
+          ></img>
+        </div>
+      ),
     },
     avensys: {
       title: "Avensys Consulting",
@@ -64,7 +70,156 @@ function Post() {
       ),
       blogpost: "some blogpost",
       stack: "some stack",
-      img: "../Resources/PostImages/avensys.png",
+      img: "",
+    },
+    battery: {
+      title: "Lithium Ion Battery State of Health Estimation",
+      description: (
+        <div>
+          Cleaned and prepared datasets from the
+          <a
+            className="ml-1 hover:underline underline-offset-2 text-[#d657a5] "
+            href="https://web.calce.umd.edu/batteries/data.htm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            CALCE Battery Research Group
+          </a>
+          . An Extreme Learning Machine (ELM) was trained to predict a battery's
+          state of health and the number of remaining cycles before its End of
+          Life (EOL).
+        </div>
+      ),
+      platform: (
+        <div>
+          <div className="my-4">
+            <span className="bg-[#34403a] rounded-sm text-sm text-[#9ae6b4] p-1 mr-2 font-bold">
+              PAPER
+            </span>
+            <span>
+              <a
+                href="https://some-link.com"
+                className="text-[#d657a5] hover:underline underline-offset-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://some-link.com
+              </a>
+            </span>
+          </div>
+          <div className="my-4">
+            <span className="bg-[#34403a] rounded-sm text-sm text-[#9ae6b4] p-1 mr-2 font-bold">
+              SOURCE
+            </span>
+            <span>
+              <a
+                href="https://github.com/marvinatorrr/SOH-estimation"
+                className="text-[#d657a5] hover:underline underline-offset-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://github.com/marvinatorrr/SOH-estimation
+              </a>
+            </span>
+          </div>
+          <div className="my-4">
+            <span className="bg-[#34403a] rounded-sm text-sm text-[#9ae6b4] p-1 mr-2 font-bold">
+              STACK
+            </span>
+            <span>Python, Jupyter Notebook, Pandas</span>
+          </div>
+        </div>
+      ),
+      img: (
+        <div>
+          <img src="../Resources/PostImages/capstoneposter.png"></img>
+        </div>
+      ),
+    },
+    avensys: {
+      title: "Avensys Consulting",
+      description:
+        "Building .NET Core applications following an agile methodology.",
+      platform: (
+        <div>
+          <div className="my-4">
+            <span className="bg-[#34403a] rounded-sm text-sm text-[#9ae6b4] p-1 mr-2 font-bold">
+              WEBSITE
+            </span>
+            <span>
+              <a
+                href="https://aven-sys.com"
+                className="text-[#d657a5] hover:underline underline-offset-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://aven-sys.com
+              </a>
+            </span>
+          </div>
+          <div className="my-4">
+            <span className="bg-[#34403a] rounded-sm text-sm text-[#9ae6b4] p-1 mr-2 font-bold">
+              STACK
+            </span>
+            <span>
+              .NET Core 3.1, Entity Core, REST API, Azure DevOps, Event Hub, MS
+              SQL, xUnit, Application Insights
+            </span>
+          </div>
+        </div>
+      ),
+      blogpost: "some blogpost",
+      stack: "some stack",
+      img: "",
+    },
+    buggy: {
+      title: "Autonomous Line Following Buggy",
+      description: <div>Implemented a PID controller by using</div>,
+      platform: (
+        <div>
+          <div className="my-4">
+            <span className="bg-[#34403a] rounded-sm text-sm text-[#9ae6b4] p-1 mr-2 font-bold">
+              PAPER
+            </span>
+            <span>
+              <a
+                href="https://some-link.com"
+                className="text-[#d657a5] hover:underline underline-offset-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://some-link.com
+              </a>
+            </span>
+          </div>
+          <div className="my-4">
+            <span className="bg-[#34403a] rounded-sm text-sm text-[#9ae6b4] p-1 mr-2 font-bold">
+              SOURCE
+            </span>
+            <span>
+              <a
+                href="https://github.com/marvinatorrr/SOH-estimation"
+                className="text-[#d657a5] hover:underline underline-offset-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://github.com/marvinatorrr/SOH-estimation
+              </a>
+            </span>
+          </div>
+          <div className="my-4">
+            <span className="bg-[#34403a] rounded-sm text-sm text-[#9ae6b4] p-1 mr-2 font-bold">
+              STACK
+            </span>
+            <span>Python, Jupyter Notebook, Pandas</span>
+          </div>
+        </div>
+      ),
+      img: (
+        <div>
+          <img src="../Resources/PostImages/capstoneposter.png"></img>
+        </div>
+      ),
     },
     post3: {
       title: "Life Long Learning",
@@ -78,7 +233,7 @@ function Post() {
       title: "title of post 4",
       description: "some description",
       platform: "some platform",
-      blogpost: "some blogpost",
+      blogpost: "https://www.instagram.com/p/CRVJ95TK_lG/?",
       stack: "some stack",
       img: "../Resources/PostImages/Post1.png",
     },
@@ -92,21 +247,22 @@ function Post() {
     <AnimatedPage>
       <div className="flex w-full justify-center">
         <div className="w-[485.5px] mt-4">
-          <p>
+          <div>
             <div className="flex items-center">
               {
                 <button onClick={() => navigate(-1)}>
                   <span className="text-[#d657a5] hover:underline underline-offset-2">
-                    Works
+                    Back
                   </span>
                 </button>
               }
               {<AiOutlineRight size={12} className="mx-2" />}
               <div className="font-bold">{postinfo.title}</div>
             </div>
-          </p>
-          <p className="mt-2">{postinfo.description}</p>
-          <p className="ml-4">{postinfo.platform}</p>
+          </div>
+          <div className="mt-2">{postinfo.description}</div>
+          <div className="ml-4 ">{postinfo.platform}</div>
+          <div className="">{postinfo.img}</div>
         </div>
       </div>
     </AnimatedPage>

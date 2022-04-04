@@ -42,12 +42,12 @@ export default function Works() {
               <div className="flex justify-center mt-2">
                 <div className="grid grid-cols-2 gap-4">
                   <motion.div variants={itemA}>
-                    <Link to="avensys">
+                    <Link to="buggy">
                       <Thumbnail post="buggy" />
                     </Link>
                   </motion.div>
                   <motion.div variants={itemA}>
-                    <Link to="avensys">
+                    <Link to="battery">
                       <Thumbnail post="battery" />
                     </Link>
                   </motion.div>
