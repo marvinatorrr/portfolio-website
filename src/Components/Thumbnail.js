@@ -20,6 +20,11 @@ function Thumbnail(props) {
       description: "PID Controller",
       img: "../Resources/PostImages/buggy.jpg",
     },
+    worldskills: {
+      title: "Worldskills Singapore",
+      description: "Industrial Control",
+      img: "../Resources/PostImages/worldskills.jpeg",
+    },
   };
   var info = dict[props.post];
 

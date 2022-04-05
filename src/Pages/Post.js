@@ -6,7 +6,8 @@ function Post() {
   var dict = {
     mindset: {
       title: "Life Long Learning",
-      description: "My moto in life is that learning never stops. ",
+      description:
+        "As a software engineer, I believe that learning never stops.",
       platform: (
         <div>
           <div className="my-4 ]">
@@ -37,10 +38,44 @@ function Post() {
         </div>
       ),
     },
+    worldskills: {
+      title: "Worldskills Singapore",
+      description:
+        "Silver medal in the Industrial Control category, focusing on installation and programming of automated systems.",
+      platform: (
+        <div>
+          <div className="my-4 ]">
+            <span className="bg-[#34403a] rounded-sm text-sm text-[#9ae6b4] p-1 mr-2 font-bold">
+              WEBSITE
+            </span>
+            <span>
+              <a
+                href="https://www.instagram.com/p/CRVJ95TK_lG/?"
+                className="text-[#d657a5] hover:underline underline-offset-2 break-words"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://www.instagram.com/p/CRVJ95TK_lG/?
+              </a>
+            </span>
+          </div>
+          <div className="my-4"></div>
+        </div>
+      ),
+      img: (
+        <div>
+          <img
+            className="rounded-xl"
+            src="../Resources/PostImages/worldskills.jpeg"
+            alt="some stuff"
+          ></img>
+        </div>
+      ),
+    },
     avensys: {
       title: "Avensys Consulting",
       description:
-        "Building .NET Core applications following an agile methodology.",
+        "Building .NET Core applications for enterprises following an agile methodology. I develop, test and troubleshoot.",
       platform: (
         <div>
           <div className="my-4">
@@ -64,7 +99,7 @@ function Post() {
             </span>
             <span>
               .NET Core 3.1, Entity Core, REST API, Azure DevOps, Event Hub, MS
-              SQL, xUnit, Application Insights
+              SQL, xUnit, Application Insights, CI/CD
             </span>
           </div>
         </div>
@@ -99,12 +134,12 @@ function Post() {
             </span>
             <span>
               <a
-                href="https://some-link.com"
-                className="text-[#d657a5] hover:underline underline-offset-2"
+                href="https://drive.google.com/file/d/1ZzhNTy7CVxPUaOKqutFEEVvKzYNZrVwP/view?usp=sharing"
+                className="text-[#d657a5] hover:underline underline-offset-2 break-words"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                https://some-link.com
+                https://drive.google.com/file/d/1ZzhNTy7CVxPUaOKqutFEEVvKzYNZrVwP/view?usp=sharing
               </a>
             </span>
           </div>
@@ -142,7 +177,12 @@ function Post() {
     },
     buggy: {
       title: "Autonomous Line Following Buggy",
-      description: <div>Implemented a PID controller by using</div>,
+      description: (
+        <div>
+          Implemented a PID controller that steers a wire following buggy,
+          modulating steering angle and speed.{" "}
+        </div>
+      ),
       platform: (
         <div>
           <div className="my-4">
@@ -150,14 +190,13 @@ function Post() {
               PAPER
             </span>
             <span>
-              npm
               <a
-                href="https://some-link.com"
-                className="text-[#d657a5] hover:underline underline-offset-2"
+                href="https://drive.google.com/file/d/10TAKbkR0gkmj6EWDsypBnkHBtRpShO34/view?usp=sharing"
+                className="text-[#d657a5] hover:underline underline-offset-2 break-words"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                https://some-link.com
+                https://drive.google.com/file/d/10TAKbkR0gkmj6EWDsypBnkHBtRpShO34/view?usp=sharing
               </a>
             </span>
           </div>
@@ -167,12 +206,12 @@ function Post() {
             </span>
             <span>
               <a
-                href="https://github.com/marvinatorrr/SOH-estimation"
+                href="https://github.com/marvinatorrr/Buggy"
                 className="text-[#d657a5] hover:underline underline-offset-2"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                https://github.com/marvinatorrr/SOH-estimation
+                https://github.com/marvinatorrr/Buggy
               </a>
             </span>
           </div>
@@ -180,16 +219,20 @@ function Post() {
             <span className="bg-[#34403a] rounded-sm text-sm text-[#9ae6b4] p-1 mr-2 font-bold">
               STACK
             </span>
-            <span>Python, Jupyter Notebook, Pandas</span>
+            <span>MPLAB X, C</span>
           </div>
         </div>
       ),
       img: (
         <div>
-          <img
-            src="../Resources/PostImages/capstoneposter.png"
-            alt="some stuff"
-          ></img>
+          <video
+            className="rounded-xl"
+            src="../Resources/PostImages/buggy.mp4"
+            muted
+            autoPlay={"autoplay"}
+            preLoad="auto"
+            loop
+          ></video>
         </div>
       ),
     },
