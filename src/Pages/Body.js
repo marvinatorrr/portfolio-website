@@ -3,7 +3,6 @@ import Profile from "../Components/Profile";
 import Header from "../Components/Header";
 import WorkText from "../Components/WorkText";
 import Button from "../Components/Button";
-import BioText from "../Components/BioText";
 import Hobbies from "../Components/Hobbies";
 import SocialMedia from "../Components/SocialMedia";
 import Thumbnail from "../Components/Thumbnail";

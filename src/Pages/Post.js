@@ -32,6 +32,7 @@ function Post() {
           <img
             className="rounded-xl"
             src="../Resources/PostImages/speech.jpg"
+            alt="some stuff"
           ></img>
         </div>
       ),
@@ -132,45 +133,12 @@ function Post() {
       ),
       img: (
         <div>
-          <img src="../Resources/PostImages/capstoneposter.png"></img>
+          <img
+            src="../Resources/PostImages/capstoneposter.png"
+            alt="some stuff"
+          ></img>
         </div>
       ),
-    },
-    avensys: {
-      title: "Avensys Consulting",
-      description:
-        "Building .NET Core applications following an agile methodology.",
-      platform: (
-        <div>
-          <div className="my-4">
-            <span className="bg-[#34403a] rounded-sm text-sm text-[#9ae6b4] p-1 mr-2 font-bold">
-              WEBSITE
-            </span>
-            <span>
-              <a
-                href="https://aven-sys.com"
-                className="text-[#d657a5] hover:underline underline-offset-2"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                https://aven-sys.com
-              </a>
-            </span>
-          </div>
-          <div className="my-4">
-            <span className="bg-[#34403a] rounded-sm text-sm text-[#9ae6b4] p-1 mr-2 font-bold">
-              STACK
-            </span>
-            <span>
-              .NET Core 3.1, Entity Core, REST API, Azure DevOps, Event Hub, MS
-              SQL, xUnit, Application Insights
-            </span>
-          </div>
-        </div>
-      ),
-      blogpost: "some blogpost",
-      stack: "some stack",
-      img: "",
     },
     buggy: {
       title: "Autonomous Line Following Buggy",
@@ -182,6 +150,7 @@ function Post() {
               PAPER
             </span>
             <span>
+              npm
               <a
                 href="https://some-link.com"
                 className="text-[#d657a5] hover:underline underline-offset-2"
@@ -217,7 +186,10 @@ function Post() {
       ),
       img: (
         <div>
-          <img src="../Resources/PostImages/capstoneposter.png"></img>
+          <img
+            src="../Resources/PostImages/capstoneposter.png"
+            alt="some stuff"
+          ></img>
         </div>
       ),
     },
