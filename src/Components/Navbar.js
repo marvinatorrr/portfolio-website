@@ -20,12 +20,7 @@ function Navbar() {
           >
             Works
           </Link>
-          <Link
-            to="posts"
-            className="mx-3 hover:underline underline-offset-2 flex items-center"
-          >
-            Posts
-          </Link>
+
           <a
             href="https://github.com/marvinatorrr/portfolio-website"
             className="mx-3 hover:underline underline-offset-2 flex items-center"
