@@ -30,50 +30,25 @@ export default function Works() {
               <div className="flex justify-center mt-2">
                 <div className="grid grid-cols-2 gap-4 mb-4">
                   <motion.div variants={itemA}>
-                    <Link to="post1">
-                      <Thumbnail post="post1" />
-                    </Link>
-                  </motion.div>
-                  <motion.div variants={itemA}>
-                    <Link to="post2">
-                      <Thumbnail post="post2" />
-                    </Link>
-                  </motion.div>
-                  <motion.div variants={itemA}>
-                    <Link to="post3">
-                      <Thumbnail post="post3" />
-                    </Link>
-                  </motion.div>
-                  <motion.div variants={itemA}>
-                    <Link to="post4">
-                      <Thumbnail post="post4" />
+                    <Link to="avensys">
+                      <Thumbnail post="avensys" />
                     </Link>
                   </motion.div>
                 </div>
               </div>
             </div>
             <div className="pt-4">
-              <Header title="Works" />
+              <Header title="Projects" />
               <div className="flex justify-center mt-2">
                 <div className="grid grid-cols-2 gap-4">
                   <motion.div variants={itemA}>
-                    <Link to="post1">
-                      <Thumbnail post="post1" />
+                    <Link to="buggy">
+                      <Thumbnail post="buggy" />
                     </Link>
                   </motion.div>
                   <motion.div variants={itemA}>
-                    <Link to="post2">
-                      <Thumbnail post="post2" />
-                    </Link>
-                  </motion.div>
-                  <motion.div variants={itemA}>
-                    <Link to="post3">
-                      <Thumbnail post="post3" />
-                    </Link>
-                  </motion.div>
-                  <motion.div variants={itemA}>
-                    <Link to="post4">
-                      <Thumbnail post="post4" />
+                    <Link to="battery">
+                      <Thumbnail post="battery" />
                     </Link>
                   </motion.div>
                 </div>

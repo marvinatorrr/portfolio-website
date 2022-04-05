@@ -5,7 +5,7 @@ function Button(props) {
     switch (title) {
       case "My portfolio":
         return <BsFillBriefcaseFill className="ml-2" />;
-      case "Popular posts":
+      case "Posts":
         return <BsFillBookFill className="ml-2" />;
       default:
         console.log("hi");

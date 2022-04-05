@@ -34,23 +34,8 @@ export default function Posts() {
                 animate="show"
               >
                 <motion.div variants={itemA}>
-                  <Link to="post1">
-                    <Thumbnail post="post1" />
-                  </Link>
-                </motion.div>
-                <motion.div variants={itemA}>
-                  <Link to="post1">
-                    <Thumbnail post="post1" />
-                  </Link>
-                </motion.div>
-                <motion.div variants={itemA}>
-                  <Link to="post1">
-                    <Thumbnail post="post1" />
-                  </Link>
-                </motion.div>
-                <motion.div variants={itemA}>
-                  <Link to="post1">
-                    <Thumbnail post="post1" />
+                  <Link to="mindset">
+                    <Thumbnail post="mindset" />
                   </Link>
                 </motion.div>
               </motion.div>

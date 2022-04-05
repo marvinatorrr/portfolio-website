@@ -3,7 +3,6 @@ import Profile from "../Components/Profile";
 import Header from "../Components/Header";
 import WorkText from "../Components/WorkText";
 import Button from "../Components/Button";
-import BioText from "../Components/BioText";
 import Hobbies from "../Components/Hobbies";
 import SocialMedia from "../Components/SocialMedia";
 import Thumbnail from "../Components/Thumbnail";
@@ -25,31 +24,28 @@ function Body() {
                 <Button text="My portfolio" />
               </Link>
             </div>
-            <div className="my-5">
-              <Header title="Bio" underline={true} />
-              <BioText />
-            </div>
+
             <div className="my-5">
               <Header title="I ♥" underline={true} />
               <Hobbies />
             </div>
-            <Header title="On the web" />
+            <Header title="On the web" underline={true} />
             <SocialMedia />
           </div>
         </div>
         <div className="flex justify-center">
           <div className="grid grid-rows-1 grid-flow-col gap-4">
-            <Link to="posts/post1">
-              <Thumbnail post="post1" />
+            <Link to="posts/mindset">
+              <Thumbnail post="mindset" />
             </Link>
-            <Link to="posts/post2">
-              <Thumbnail post="post2" />
+            <Link to="works/avensys">
+              <Thumbnail post="avensys" />
             </Link>
           </div>
         </div>
         <div className="flex justify-center my-5">
           <Link to="posts">
-            <Button text="Popular posts" />
+            <Button text="Posts" />
           </Link>
         </div>
       </div>

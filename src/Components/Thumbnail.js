@@ -1,24 +1,24 @@
 function Thumbnail(props) {
   var dict = {
-    post1: {
-      title: "title of post 1",
-      description: "some description",
-      img: "../Resources/PostImages/Post1.png",
+    mindset: {
+      title: "Life Long Learning",
+      description: "Stay Curious, Stay Hungry",
+      img: "../Resources/PostImages/speech.jpg",
     },
-    post2: {
-      title: "title of post 2",
-      description: "some description",
-      img: "../Resources/PostImages/Post1.png",
+    avensys: {
+      title: "Avensys Consulting",
+      description: ".NET Core",
+      img: "../Resources/PostImages/avensys.jpg",
     },
-    post3: {
-      title: "title of post 3",
-      description: "some description",
-      img: "../Resources/PostImages/Post1.png",
+    battery: {
+      title: "State of Health Estimation",
+      description: "Extreme Learning Machine",
+      img: "../Resources/PostImages/battery.png",
     },
-    post4: {
-      title: "title of post 4",
-      description: "some description",
-      img: "../Resources/PostImages/Post1.png",
+    buggy: {
+      title: "Autonomous Buggy",
+      description: "PID Controller",
+      img: "../Resources/PostImages/buggy.jpg",
     },
   };
   var info = dict[props.post];
@@ -27,7 +27,8 @@ function Thumbnail(props) {
     <div className="w-[230px] h-[187px] group">
       <img
         src={info.img}
-        className="w-[230px] h-[128px] rounded-lg my-2 group-hover:border-2 group-hover:border-solid group-hover: border-pink-500 transition-all duration-75 ease-linear"
+        alt="post"
+        className="w-[230px] h-[128px] rounded-lg my-2 group-hover:border-2 group-hover:border-solid group-hover: border-pink-500 transition-all duration-75 ease-linear object-cover"
       ></img>
       <div className="grid grid-rows-2 justify-center ">
         <h3 className=" text-center font-bold">{info.title}</h3>
