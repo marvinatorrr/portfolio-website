@@ -38,6 +38,12 @@ export default function Posts() {
                     <Thumbnail post="mindset" />
                   </Link>
                 </motion.div>
+
+                <motion.div variants={itemA}>
+                  <Link to="worldskills">
+                    <Thumbnail post="worldskills" />
+                  </Link>
+                </motion.div>
               </motion.div>
             </div>
           </div>
