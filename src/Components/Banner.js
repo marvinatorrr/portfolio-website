@@ -18,6 +18,7 @@ function Banner() {
           </Suspense>
           <OrbitControls
             autoRotate
+            autoRotateSpeed={5.0}
             enablePan={false}
             enableZoom={true}
             enableDamping
