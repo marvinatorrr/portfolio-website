@@ -35,7 +35,7 @@ function Body() {
         </div>
         <div className="flex justify-center">
           <div className="grid grid-rows-1 grid-flow-col gap-4">
-            <Link to="posts/mindset">
+            <Link to="works/mindset">
               <Thumbnail post="mindset" />
             </Link>
             <Link to="works/avensys">
@@ -43,11 +43,7 @@ function Body() {
             </Link>
           </div>
         </div>
-        <div className="flex justify-center my-5">
-          <Link to="posts">
-            <Button text="Posts" />
-          </Link>
-        </div>
+        <div className="flex justify-center my-5"></div>
       </div>
     </AnimatedPage>
   );

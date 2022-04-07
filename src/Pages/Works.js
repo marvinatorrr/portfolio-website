@@ -39,7 +39,7 @@ export default function Works() {
             </div>
             <div className="pt-4">
               <Header title="Projects" />
-              <div className="flex justify-center mt-2">
+              <div className="flex justify-center mt-2 mb-4">
                 <div className="grid grid-cols-2 gap-4">
                   <motion.div variants={itemA}>
                     <Link to="buggy">
@@ -49,6 +49,23 @@ export default function Works() {
                   <motion.div variants={itemA}>
                     <Link to="battery">
                       <Thumbnail post="battery" />
+                    </Link>
+                  </motion.div>
+                </div>
+              </div>
+            </div>
+            <div className="pt-4">
+              <Header title="Posts" />
+              <div className="flex justify-center mt-2">
+                <div className="grid grid-cols-2 gap-4">
+                  <motion.div variants={itemA}>
+                    <Link to="mindset">
+                      <Thumbnail post="mindset" />
+                    </Link>
+                  </motion.div>
+                  <motion.div variants={itemA}>
+                    <Link to="worldskills">
+                      <Thumbnail post="worldskills" />
                     </Link>
                   </motion.div>
                 </div>
