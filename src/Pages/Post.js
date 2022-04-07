@@ -7,7 +7,7 @@ function Post() {
     mindset: {
       title: "Life Long Learning",
       description:
-        "As a software engineer, I believe that learning never stops.",
+        "I am a firm believer of adopting a growth mindset to constantly push the boundaries.",
       platform: (
         <div>
           <div className="my-4 ]">
@@ -58,6 +58,12 @@ function Post() {
                 https://www.instagram.com/p/CRVJ95TK_lG/?
               </a>
             </span>
+          </div>
+          <div className="my-4">
+            <span className="bg-[#34403a] rounded-sm text-sm text-[#9ae6b4] p-1 mr-2 font-bold">
+              STACK
+            </span>
+            <span>OMRON PLC</span>
           </div>
           <div className="my-4"></div>
         </div>
@@ -166,14 +172,6 @@ function Post() {
           </div>
         </div>
       ),
-      img: (
-        <div>
-          <img
-            src="../Resources/PostImages/capstoneposter.png"
-            alt="some stuff"
-          ></img>
-        </div>
-      ),
     },
     buggy: {
       title: "Autonomous Line Following Buggy",
@@ -235,22 +233,6 @@ function Post() {
           ></video>
         </div>
       ),
-    },
-    post3: {
-      title: "Life Long Learning",
-      description: "some description",
-      platform: "some platform",
-      blogpost: "some blogpost",
-      stack: "some stack",
-      img: "../Resources/PostImages/Post1.png",
-    },
-    post4: {
-      title: "title of post 4",
-      description: "some description",
-      platform: "some platform",
-      blogpost: "https://www.instagram.com/p/CRVJ95TK_lG/?",
-      stack: "some stack",
-      img: "../Resources/PostImages/Post1.png",
     },
   };
 

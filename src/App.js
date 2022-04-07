@@ -3,7 +3,7 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import "./index.css";
 import Body from "./Pages/Body";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import Works from "./Pages/Works";
 import { AnimatePresence } from "framer-motion";
 import Post from "./Pages/Post";
@@ -19,6 +19,7 @@ function App() {
           <Route path="/works" element={<Works />} />
           <Route path="/" element={<Body />} />
           <Route path="/works/:id" element={<Post />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </AnimatePresence>
       <Footer />
