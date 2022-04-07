@@ -14,16 +14,17 @@ Check it out at [https://marvinho.dev](https://marvinho.dev)
 ### Installation
 
 1. Install NPM packages
+
    ```sh
    npm install
    ```
+
 2. Start the server
 
-```sh
-npm start
-```
+   ```sh
+   npm start
+   ```
 
 ## Acknowledgments
 
-- [Golden Retriever Model](https://skfb.ly/6Up8H)
-  "Golden Retriever (Sitting)" (https://skfb.ly/6Up8H) by David Wigforss is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+"Golden Retriever (Sitting)" (https://skfb.ly/6Up8H) by David Wigforss is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
