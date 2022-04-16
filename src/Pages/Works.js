@@ -24,7 +24,7 @@ export default function Works() {
     <AnimatedPage>
       <motion.div variants={container} initial="hidden" animate="show">
         <div className="flex  justify-center mt-2">
-          <div className="w-[485.5px] my-3 divide-y divide-zinc-500 ">
+          <div className="w-[375px] my-3 divide-y divide-zinc-500 ">
             <div>
               <Header title="Works" />
               <div className="flex justify-center mt-2">

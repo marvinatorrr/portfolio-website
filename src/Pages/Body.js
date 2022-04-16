@@ -12,11 +12,11 @@ import { Link } from "react-router-dom";
 function Body() {
   return (
     <AnimatedPage>
-      <div>
+      <div className="mx-6">
         <Card />
         <Profile />
-        <div className="flex  justify-center ">
-          <div className="w-[485.5px] my-3">
+        <div className="flex justify-center">
+          <div className="my-3">
             <Header title="Work" underline={true} />
             <WorkText />
             <div className=" flex justify-center my-5">
@@ -33,8 +33,8 @@ function Body() {
             <SocialMedia />
           </div>
         </div>
-        <div className="flex justify-center">
-          <div className="grid grid-rows-1 grid-flow-col gap-4">
+        <div className="flex justify-center items-center">
+          <div className="grid grid-rows-2 grid-flow-col">
             <Link to="works/mindset">
               <Thumbnail post="mindset" />
             </Link>
@@ -43,7 +43,6 @@ function Body() {
             </Link>
           </div>
         </div>
-        <div className="flex justify-center my-5"></div>
       </div>
     </AnimatedPage>
   );

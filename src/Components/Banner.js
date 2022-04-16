@@ -10,7 +10,7 @@ function Model() {
 function Banner() {
   return (
     <div className="flex justify-center">
-      <div className="w-[485.5px] h-[250px]  rounded-lg">
+      <div className="h-[250px] rounded-lg mx-4">
         <Canvas camera={{ position: [0, 0.2, 0.8] }}>
           <ambientLight intensity={0.7} />
           <Suspense fallback={null}>
