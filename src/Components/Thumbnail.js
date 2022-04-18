@@ -33,7 +33,7 @@ function Thumbnail(props) {
       <img
         src={info.img}
         alt="post"
-        className="rounded-lg  group-hover:border-2 group-hover:border-solid group-hover: border-pink-500 transition-all duration-75 ease-linear object-cover"
+        className="rounded-lg  group-hover:border-2 group-hover:border-solid group-hover: border-pink-500 transition-all duration-75 ease-linear object-cover w-[100%] h-[100%] max-w-[375px]"
       ></img>
       <div className="grid grid-rows-2 justify-center mt-2">
         <h3 className=" text-center font-bold">{info.title}</h3>
