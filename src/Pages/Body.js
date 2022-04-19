@@ -6,6 +6,7 @@ import Button from "../Components/Button";
 import Hobbies from "../Components/Hobbies";
 import SocialMedia from "../Components/SocialMedia";
 import Thumbnail from "../Components/Thumbnail";
+import BioText from "../Components/BioText";
 import AnimatedPage from "./AnimatePage";
 import { Link } from "react-router-dom";
 
@@ -26,9 +27,14 @@ function Body() {
             </div>
 
             <div className="my-5">
+              <Header title="Bio" underline={true} />
+              <BioText />
+            </div>
+            <div className="my-5">
               <Header title="I ♥" underline={true} />
               <Hobbies />
             </div>
+
             <Header title="On the web" underline={true} />
             <SocialMedia />
           </div>
