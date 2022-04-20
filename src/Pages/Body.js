@@ -40,7 +40,7 @@ function Body() {
           </div>
         </div>
         <div className="flex justify-center items-center">
-          <div className="grid grid-rows-2 grid-flow-col sm:grid-rows-1">
+          <div className="grid grid-rows-2 sm:grid-cols-2 sm:gap-x-[24px] sm:grid-rows-1">
             <Link to="works/mindset">
               <Thumbnail post="mindset" />
             </Link>

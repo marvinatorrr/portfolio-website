@@ -30,7 +30,7 @@ function Thumbnail(props) {
 
   return (
     <div className="group">
-      <div className="max-w-[375px] mt-4">
+      <div className="max-w-[375px] mt-4 sm:w-[230.75px]">
         <img
           src={info.img}
           alt="post"

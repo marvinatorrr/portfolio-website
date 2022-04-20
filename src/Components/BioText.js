@@ -1,7 +1,7 @@
 function BioText() {
   return (
     <div>
-      <div className="flex max-w-[375px]">
+      <div className="flex max-w-[375px] sm:max-w-[485.5px]">
         <div className="font-bold mr-2">2021</div>
         <div>
           Completed Bachelor of Engineering with Honours in Electrical Power
