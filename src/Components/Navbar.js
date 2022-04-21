@@ -11,7 +11,7 @@ function Navbar() {
           <div className="flex items-center text-xl font-extrabold">
             <Link to="/" className="flex">
               <GiKingJuMask size={30} className="mr-1" />
-              Marv
+              Marvin
             </Link>
           </div>
           <Link
