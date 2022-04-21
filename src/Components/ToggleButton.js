@@ -1,8 +1,11 @@
 import { CgSun } from "react-icons/cg";
 import { BsFillMoonFill } from "react-icons/bs";
-import useDarkMode from "../Hooks/useDarkMode";
+import { useContext } from "react";
+import { DarkModeContext } from "./Navbar";
 
 function ToggleButton() {
+  const { colorTheme, setTheme } = useContext(DarkModeContext);
+
   function RenderLogo(theme) {
     if (theme === "dark") {
       return <BsFillMoonFill color="white" />;
@@ -10,7 +13,6 @@ function ToggleButton() {
     return <CgSun color="black" />;
   }
 
-  const [colorTheme, setTheme] = useDarkMode();
   return (
     <button
       className="bg-[#805ad5] dark:bg-[#fbd38d] w-[40px] h-[40px] rounded-lg flex justify-center items-center
