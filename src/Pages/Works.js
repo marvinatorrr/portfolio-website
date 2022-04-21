@@ -23,12 +23,12 @@ export default function Works() {
   return (
     <AnimatedPage>
       <motion.div variants={container} initial="hidden" animate="show">
-        <div className="flex  justify-center mt-2">
-          <div className="w-[485.5px] my-3 divide-y divide-zinc-500 ">
+        <div className="flex  justify-center mt-2 mx-6">
+          <div className="w-[485.px] my-3 divide-y divide-zinc-500 ">
             <div>
               <Header title="Works" />
               <div className="flex justify-center mt-2">
-                <div className="grid grid-cols-2 gap-4 mb-4">
+                <div className="grid grid-cols-1 gap-4 mb-4 sm:grid-cols-2">
                   <motion.div variants={itemA}>
                     <Link to="avensys">
                       <Thumbnail post="avensys" />
@@ -39,8 +39,8 @@ export default function Works() {
             </div>
             <div className="pt-4">
               <Header title="Projects" />
-              <div className="flex justify-center mt-2 mb-4">
-                <div className="grid grid-cols-2 gap-4">
+              <div className="flex justify-center mt-2 mb-4 ">
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <motion.div variants={itemA}>
                     <Link to="buggy">
                       <Thumbnail post="buggy" />
@@ -57,7 +57,7 @@ export default function Works() {
             <div className="pt-4">
               <Header title="Posts" />
               <div className="flex justify-center mt-2">
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <motion.div variants={itemA}>
                     <Link to="mindset">
                       <Thumbnail post="mindset" />

@@ -11,7 +11,7 @@ import Post from "./Pages/Post";
 function App() {
   const location = useLocation();
   return (
-    <div className="bg-[#f0e7db] text-[#1a202c] dark:text-[#eee] font-serif pt-14 pb-3 text-base dark:bg-[#202023] transition duration-500 ease-out min-h-screen text-justify">
+    <div className="bg-[#f0e7db] text-[#1a202c] dark:text-[#eee] font-serif pt-14 pb-3 text-base dark:bg-[#202023] transition duration-500 ease-out min-h-screen text-justify overflow-x-hidden">
       <Navbar />
       <Banner />
       <AnimatePresence exitBeforeEnter>
