@@ -114,7 +114,7 @@ function Post() {
     battery: {
       title: "Lithium Ion Battery State of Health Estimation",
       description: (
-        <div>
+        <div className="w-full">
           Cleaned and prepared datasets from the
           <a
             className="ml-1 hover:underline underline-offset-2 text-[#d657a5] "
@@ -219,7 +219,7 @@ function Post() {
         </div>
       ),
       img: (
-        <div className="max-w-[375px] sm:w-[230.75px]">
+        <div className="max-w-[375px] sm:w-[485.5px] sm:max-w-[485.5px]">
           <video
             className="rounded-xl object-cover aspect-video"
             src="../Resources/PostImages/buggy.mp4"
@@ -239,9 +239,9 @@ function Post() {
 
   return (
     <AnimatedPage>
-      <div className="mx-6">
-        <div className="flex w-auto justify-center">
-          <div className="max-w-[375px] sm:w-[485.5px] mt-4">
+      <div className="mx-6 ">
+        <div className="flex justify-center">
+          <div className="mt-4 w-full max-w-[375px] sm:w-[485.5px] sm:max-w-[485.5px]">
             <div>
               <div className="flex items-center">
                 {
