@@ -110,9 +110,6 @@ function Post() {
           </div>
         </div>
       ),
-      blogpost: "some blogpost",
-      stack: "some stack",
-      img: "",
     },
     battery: {
       title: "Lithium Ion Battery State of Health Estimation",
@@ -176,14 +173,14 @@ function Post() {
     buggy: {
       title: "Autonomous Line Following Buggy",
       description: (
-        <div>
+        <div className="w-full">
           Implemented a PID controller that steers a wire following buggy,
-          modulating steering angle and speed.{" "}
+          modulating steering angle and speed.
         </div>
       ),
       platform: (
         <div>
-          <div className="my-4">
+          <div className="my-4 ">
             <span className="bg-[#34403a] rounded-sm text-sm text-[#9ae6b4] p-1 mr-2 font-bold">
               PAPER
             </span>
@@ -205,7 +202,7 @@ function Post() {
             <span>
               <a
                 href="https://github.com/marvinatorrr/Buggy"
-                className="text-[#d657a5] hover:underline underline-offset-2"
+                className="text-[#d657a5] hover:underline underline-offset-2 break-words"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -222,9 +219,9 @@ function Post() {
         </div>
       ),
       img: (
-        <div>
+        <div className="max-w-[375px] sm:w-[230.75px]">
           <video
-            className="rounded-xl"
+            className="rounded-xl object-cover aspect-video"
             src="../Resources/PostImages/buggy.mp4"
             muted
             autoPlay={"autoplay"}
@@ -242,24 +239,26 @@ function Post() {
 
   return (
     <AnimatedPage>
-      <div className="flex w-full justify-center">
-        <div className="w-[485.5px] mt-4">
-          <div>
-            <div className="flex items-center">
-              {
-                <button onClick={() => navigate(-1)}>
-                  <span className="text-[#d657a5] hover:underline underline-offset-2">
-                    Back
-                  </span>
-                </button>
-              }
-              {<AiOutlineRight size={12} className="mx-2" />}
-              <div className="font-bold">{postinfo.title}</div>
+      <div className="mx-6">
+        <div className="flex w-auto justify-center">
+          <div className="max-w-[375px] sm:w-[485.5px] mt-4">
+            <div>
+              <div className="flex items-center">
+                {
+                  <button onClick={() => navigate(-1)}>
+                    <span className="text-[#d657a5] hover:underline underline-offset-2">
+                      Back
+                    </span>
+                  </button>
+                }
+                {<AiOutlineRight size={12} className="mx-2" />}
+                <div className="font-bold">{postinfo.title}</div>
+              </div>
             </div>
+            <div className="mt-2">{postinfo.description}</div>
+            <div className="ml-4 ">{postinfo.platform}</div>
+            <div className="">{postinfo.img}</div>
           </div>
-          <div className="mt-2">{postinfo.description}</div>
-          <div className="ml-4 ">{postinfo.platform}</div>
-          <div className="">{postinfo.img}</div>
         </div>
       </div>
     </AnimatedPage>
