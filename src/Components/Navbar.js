@@ -6,12 +6,12 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div className="h-14 w-full flex justify-center fixed top-0 bg-opacity-75 backdrop-blur-sm	 bg-[#f5f0e8] dark:bg-[#202023] text-black dark:text-white text-base dark:bg-opacity-75 dark:backdrop-blur-sm z-50">
-      <div className="flex w-[375px] sm:w-[485.5px] justify-between">
+      <div className="flex w-[375px] max-w-[375px] sm:w-[485.5px] sm:max-w-[485.5px] justify-between mx-6">
         <div className="flex">
           <div className="flex items-center text-xl font-extrabold">
             <Link to="/" className="flex">
               <GiKingJuMask size={30} className="mr-1" />
-              Marvin Ho
+              Marvin
             </Link>
           </div>
           <Link
