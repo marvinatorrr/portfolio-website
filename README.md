@@ -2,6 +2,8 @@
 
 This is my personal portfolio website.
 
+Deployed using Netlify.
+
 Check it out at [https://marvinho.dev](https://marvinho.dev)
 
 ### Built With
