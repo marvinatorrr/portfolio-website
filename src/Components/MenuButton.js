@@ -2,14 +2,21 @@ import { useContext, useRef, useState, useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { DarkModeContext } from "./Navbar";
 import { BsGithub, BsFillArchiveFill } from "react-icons/bs";
+import { AiFillHome } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 function MenuButton() {
   function DropDownMenu() {
     return (
-      <div className="bg-white dark:bg-[#2d3748] w-[150px] h-[92px] rounded-lg border-2 border-gray-500 shadow-xl">
+      <div className="bg-white dark:bg-[#2d3748] w-[150px] h-[128px] rounded-lg border-2 border-gray-500 shadow-xl">
         <div className="grid grid-cols-1 my-2 ">
+          <div className="h-[36px] px-4 flex items-center hover:bg-red-300 hover:underline underline-offset-2">
+            <Link to="/" className="flex items-center w-full h-full">
+              <AiFillHome className="mr-2" />
+              Home
+            </Link>
+          </div>
           <div className="h-[36px] px-4 flex items-center hover:bg-red-300 hover:underline underline-offset-2">
             <Link to="/works" className="flex items-center w-full h-full">
               <BsFillArchiveFill className="mr-2" />
