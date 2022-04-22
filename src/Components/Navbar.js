@@ -1,10 +1,11 @@
 import ToggleButton from "./ToggleButton";
 import { GiKingJuMask } from "react-icons/gi";
-import { BsGithub } from "react-icons/bs";
+import { BsGithub, BsFillArchiveFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { createContext } from "react";
 import MenuButton from "./MenuButton";
 import useDarkMode from "../Hooks/useDarkMode";
+import Button from "./Button";
 
 export const DarkModeContext = createContext();
 
@@ -38,11 +39,11 @@ function Navbar() {
         </div>
         <div className="flex">
           <DarkModeContext.Provider value={{ colorTheme, setTheme }}>
-            <div className="flex items-center">
+            <div className="flex items-center justify-center">
               <ToggleButton></ToggleButton>
             </div>
 
-            <div className="flex items-center sm:hidden">
+            <div className="sm:hidden relative flex items-center">
               <MenuButton></MenuButton>
             </div>
           </DarkModeContext.Provider>

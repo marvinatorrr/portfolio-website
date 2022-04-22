@@ -8,7 +8,6 @@ function Button(props) {
       case "Posts":
         return <BsFillBookFill className="ml-2" />;
       default:
-        console.log("hi");
         break;
     }
   }
