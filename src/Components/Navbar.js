@@ -1,11 +1,10 @@
 import ToggleButton from "./ToggleButton";
 import { GiKingJuMask } from "react-icons/gi";
-import { BsGithub, BsFillArchiveFill } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { createContext } from "react";
 import MenuButton from "./MenuButton";
 import useDarkMode from "../Hooks/useDarkMode";
-import Button from "./Button";
 
 export const DarkModeContext = createContext();
 
@@ -45,6 +44,7 @@ function Navbar() {
 
             <div className="sm:hidden relative flex items-center">
               <MenuButton></MenuButton>
+              <div className="absolute top-14 right-0"></div>
             </div>
           </DarkModeContext.Provider>
         </div>
