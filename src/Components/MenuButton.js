@@ -5,6 +5,7 @@ import { BsGithub, BsFillArchiveFill } from "react-icons/bs";
 import { AiFillHome } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function MenuButton() {
   function DropDownMenu() {
@@ -73,6 +74,11 @@ function MenuButton() {
     setMenu(false);
   }, [location]);
 
+  const variants = {
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: "-25%" },
+  };
+
   return (
     <div ref={ref}>
       <button
@@ -85,7 +91,9 @@ function MenuButton() {
         {logo}
       </button>
       <div className="absolute top-14 right-0">
-        {menuOpen && <DropDownMenu />}
+        <motion.nav animate={menuOpen ? "open" : "closed"} variants={variants}>
+          <DropDownMenu />
+        </motion.nav>
       </div>
     </div>
   );
