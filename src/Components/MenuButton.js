@@ -91,7 +91,11 @@ function MenuButton() {
         {logo}
       </button>
       <div className="absolute top-14 right-0">
-        <motion.nav animate={menuOpen ? "open" : "closed"} variants={variants}>
+        <motion.nav
+          initial={false}
+          animate={menuOpen ? "open" : "closed"}
+          variants={variants}
+        >
           <DropDownMenu />
         </motion.nav>
       </div>
