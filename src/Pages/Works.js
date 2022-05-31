@@ -30,8 +30,8 @@ export default function Works() {
               <div className="flex justify-center mt-2">
                 <div className="grid grid-cols-1 gap-4 mb-4 sm:grid-cols-2">
                   <motion.div variants={itemA}>
-                    <Link to="avensys">
-                      <Thumbnail post="avensys" />
+                    <Link to="accenture">
+                      <Thumbnail post="accenture" />
                     </Link>
                   </motion.div>
                 </div>

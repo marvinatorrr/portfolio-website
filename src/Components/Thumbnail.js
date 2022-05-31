@@ -5,10 +5,10 @@ function Thumbnail(props) {
       description: "Stay Curious, Stay Hungry",
       img: "../Resources/PostImages/speech.jpg",
     },
-    avensys: {
-      title: "Avensys Consulting",
+    accenture: {
+      title: "Accenture",
       description: ".NET Core",
-      img: "../Resources/PostImages/avensys.jpg",
+      img: "../Resources/PostImages/accenture.png",
     },
     battery: {
       title: "State of Health Estimation",

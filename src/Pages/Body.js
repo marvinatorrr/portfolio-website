@@ -44,8 +44,8 @@ function Body() {
             <Link to="works/mindset">
               <Thumbnail post="mindset" />
             </Link>
-            <Link to="works/avensys">
-              <Thumbnail post="avensys" />
+            <Link to="works/accenture">
+              <Thumbnail post="accenture" />
             </Link>
           </div>
         </div>
