@@ -78,8 +78,8 @@ function Post() {
         </div>
       ),
     },
-    avensys: {
-      title: "Avensys Consulting",
+    accenture: {
+      title: "Accenture",
       description:
         "Building .NET Core applications for enterprises following an agile methodology. I develop, test and troubleshoot.",
       platform: (
@@ -90,12 +90,12 @@ function Post() {
             </span>
             <span>
               <a
-                href="https://aven-sys.com"
+                href="https://www.accenture.com/sg-en"
                 className="text-[#d657a5] hover:underline underline-offset-2"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                https://aven-sys.com
+                https://www.accenture.com/sg-en
               </a>
             </span>
           </div>

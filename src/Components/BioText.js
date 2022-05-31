@@ -10,7 +10,7 @@ function BioText() {
       </div>
       <div className="flex mt-2">
         <div className="font-bold mr-2">2021</div>
-        <div>.NET Software Engineer at Avensys Consulting</div>
+        <div>.NET Software Engineer at Accenture</div>
       </div>
     </div>
   );
